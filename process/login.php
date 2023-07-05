@@ -30,12 +30,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                     // Set the logged_in session variable
                     $_SESSION['logged_in'] = true;
-
+                    $_SESSION['auth'] =session_id();
                     // Set the username in the session
                     $_SESSION['username'] = $username;
 
                     // Create a new session record in the database
-                    createSessionRecord($username);
+                    
 
                     // Redirect the user to the home page or any other authorized page
                     header("Location: ../admin/add_services.php"); 
@@ -54,38 +54,5 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $con->close();
 }
 
-function checkActiveSession($username)
-{
-    global $con;
 
-    // Prepare a SQL statement to check if the user has an active session
-    $sql = "SELECT * FROM `active_sessions` WHERE `username` = ?";
-    $stmt = $con->prepare($sql);
-    $stmt->bind_param('s', $username);
-    $stmt->execute();
-
-    // Get the result
-    $result = $stmt->get_result();
-
-    // Check if the user has an active session
-    if ($result->num_rows > 0) {
-        return true;
-    }
-
-    return false;
-}
-
-function createSessionRecord($username)
-{
-    global $con;
-
-    // Prepare a SQL statement to create a new session record
-    $sql = "INSERT INTO `active_sessions` (`username`) VALUES (?)";
-    $stmt = $con->prepare($sql);
-    $stmt->bind_param('s', $username);
-    $stmt->execute();
-
-    // Close the prepared statement
-    $stmt->close();
-}
 ?>
