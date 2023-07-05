@@ -1,0 +1,166 @@
+@font-face {
+    font-family: MyCustomFont;
+    src: url('../font/Montserrat-VariableFont_wght.ttf');
+}
+body{
+height: fit-content;
+width: fit-content;
+left: 0;
+top: 0;
+font-family: MyCustomFont;
+align-items: center;
+}
+
+.navigation {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #9cfdbc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+
+}
+
+.navigation-link {
+    float: right;
+    margin-right: 20px;
+    margin-top: 25px;
+
+}
+
+.head-logo {
+    max-width: fit-content;
+    max-height: fit-content;
+    width: 70px;
+}
+
+a {
+    margin-right: 20px;
+    margin-bottom: 10px;
+    font-family: MyCustomFont;
+    font-weight: 600;
+    color: #18272F;
+    position: relative;
+    text-decoration: none;
+}
+
+a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    border-radius: 4px;
+    background-color: #18272F;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+
+a:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.content{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding-left:10%;
+    padding-right: 10%;
+}
+
+/****Admin Add Services****/
+
+.appliances-services{
+    margin-right: 10px;
+    padding: 10px 10px 10px 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: fit-content;
+
+}
+
+.appliances-electronics{
+    display: flex;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+
+.add-btn{
+    border-radius: 10px;
+    padding-left: 5px;
+    font-family: MyCustomFont;
+    font-size: 18px;
+}
+
+.title-add{
+    margin-top: 100px;
+    margin-left: 50px;
+}
+
+.add-typebtn{
+    background-color: #9cfdbc;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    width: 100px;
+    margin-top: 20px;
+    float: right;
+    border-radius: 10px;
+    padding-left: 5px;
+    font-family: MyCustomFont;
+    font-size: 18px;
+    transition: transform 0.2s ease;
+    padding: 10px;
+
+}
+
+
+.add-typebtn:active,
+.add-typebtn:focus {
+  transform: scale(0.95);
+  /* Add any additional styles for the focus or active state */
+}
+
+
+.add-typebtn:active:active,
+.add-typebtn:focus:active {
+  transform: scale(1);
+}
+
+.add-services{
+    display: flex;
+    margin-top: 50px;
+    margin-left: 50px;
+    padding: 10px 10px 10px 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: fit-content;
+}
+
+ul.list-services{
+    list-style-type: none;
+}
+
+.title-list{
+    margin-left: 45px;
+}
+
+.choose-services{
+    margin-left: 20px;
+    margin-top: 50px;
+    margin-right: 20px;
+}
+
+.add-servicesbtn{
+    margin-left: 50px;
+    margin-top: 200px;
+
+}
+
+
+
