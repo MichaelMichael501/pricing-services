@@ -27,11 +27,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         // Verify the password
         if ($password == $user['password']) {
             // Check if the user is already logged in
-            if (!isset($_SESSION['logged_in'])) {
-                // Check if the user has an active session in the database
-                $activeSession = checkActiveSession($username);
 
-                if (!$activeSession) {
                     // Set the logged_in session variable
                     $_SESSION['logged_in'] = true;
 
@@ -43,17 +39,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                     // Redirect the user to the home page or any other authorized page
                     header("Location: ../admin/add_services.php"); 
-                    exit();
-                } else {
-                    // If the user already has an active session, display an error message
-                    echo '<script>alert("User is already logged in from another device or browser."); window.location.href = "../admin/index.php";</script>';
-                    
-                }
-            } else {
-                // If the user is already logged in, display an error message
-                echo '<script>alert("User is already logged in."); window.location.href = "../admin/index.php";</script>';
-                
-            }
+                    exit(); 
         } else {
             // If the password is incorrect, display an error message
             echo '<script>alert("Invalid password."); window.location.href = "../admin/index.php";</script>';
