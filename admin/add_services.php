@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <?php
 include('../include/include_body.php');
-include('../include/check_user_login.php');
+include('../include/authentication.php');
 include('../process/config.php');
 ?>
 <? ?>
