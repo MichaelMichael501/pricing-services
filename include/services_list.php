@@ -1,4 +1,3 @@
-<h4 class="title-list">Select Services:</h4>
 <?php
 include('../process/config.php');
 $typeId = $_POST['typeId'];
@@ -9,18 +8,15 @@ if ($typeId) {
   /*******************************************************/
   echo '<ul class="list-services">';
   while ($row = mysqli_fetch_assoc($result)) {
-    $getServices = $row['id'];
-    $devices = @mysqli_query($con, "SELECT * FROM `pricing` WHERE `services`='$getServices' AND `type`='$typeId' ");
+    $devices = mysqli_query($con, "SELECT * FROM `pricing` WHERE `services` = '" . $row['id'] . "' AND `type` = '$typeId'");
     $value = mysqli_fetch_array($devices);
     if ($value === null || $value['services'] != $row['id']) {
-      $serviceId = $row['id'];
       echo '<li>';
-      echo '<input type="radio" id="selectedItems" name="selectedItems" value="' . $row['id']  . '">';
+      echo '<input type="radio" id="selectedItems" name="selectedItems" value="' . $row['id'] . '">';
       echo $row['name'];
       echo '</li>';
     }
   }
   echo '</ul>';
 }
-
 ?>
