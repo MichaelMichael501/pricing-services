@@ -43,7 +43,7 @@ $(document).ready(function () {
     //Add Services 
     $('#addServices').click(function () {
         var type = $('#selectedType').val();
-        var services = $('#selectedItems').val();
+        var services = $('input[name="selectedItems"]:checked').val();
         var price = $('#fee').val();
 
         $.ajax({
