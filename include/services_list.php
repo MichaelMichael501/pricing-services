@@ -15,7 +15,7 @@ if ($typeId) {
     if ($value === null || $value['services'] != $row['id']) {
       $serviceId = $row['id'];
       echo '<li>';
-      echo '<input type="radio" id="selectedItems" name="selectedItems" value="' . $serviceId  . '">';
+      echo '<input type="radio" id="selectedItems" name="selectedItems" value="' . $row['id']  . '">';
       echo $row['name'];
       echo '</li>';
     }
