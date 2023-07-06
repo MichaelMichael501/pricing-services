@@ -9,50 +9,24 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $username = $_POST['usernameField'];
     $password = $_POST['password-field'];
 
-    global $con;
+    $adminAccount = @mysqli_query($con, "SELECT * FROM `admin_account` WHERE `username` = '$username'");
+    $checkAccount = mysqli_num_rows($adminAccount);
+    $getPassword = mysqli_fetch_array($adminAccount);
 
-    // Prepare a SQL statement to retrieve the user's data based on the provided username
-    $sql = "SELECT * FROM `admin_account` WHERE `username` = ?";
-    $stmt = $con->prepare($sql);
-    $stmt->bind_param('s', $username);
-    $stmt->execute();
-
-    // Get the result
-    $result = $stmt->get_result();
-
-    // Check if a user with the provided username exists
-    if ($result->num_rows === 1) {
-        $user = $result->fetch_assoc();
-
-        // Verify the password
-        if ($password == $user['password']) {
-            // Check if the user is already logged in
-
-                    // Set the logged_in session variable
-                    $_SESSION['logged_in'] = true;
-                    $_SESSION['auth'] =session_id();
-                    // Set the username in the session
-                    $_SESSION['username'] = $username;
-
-                    // Create a new session record in the database
-                    
-
-                    // Redirect the user to the home page or any other authorized page
-                    header("Location: ../admin/add_services.php"); 
-                    exit(); 
+    if ($checkAccount > 0) {
+        if ($getPassword['password'] == $password) {
+            $_SESSION['auth'] = session_id();
+            header("location:../admin/add_services.php");
         } else {
-            // If the password is incorrect, display an error message
-            echo '<script>alert("Invalid password."); window.location.href = "../admin/index.php";</script>';
+            $error = "Password is invalid";
+            echo '<script type="text/javascript">';
+            echo ' alert("' . $error . '")';  //not showing an alert box.
+            echo '</script>';
         }
     } else {
-        // If the username is not found, display an error message
-        echo '<script>alert("Invalid username."); window.location.href = "../admin/index.php";</script>';
+        $error = "Login is invalid";
+        echo '<script type="text/javascript">';
+        echo ' alert("' . $error . '")';  //not showing an alert box.
+        echo '</script>';
     }
-
-    // Close the prepared statement and database connection
-    $stmt->close();
-    $con->close();
 }
-
-
-?>
