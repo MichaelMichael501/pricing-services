@@ -18,19 +18,25 @@ include('../process/config.php');
 </head>
 
 <body>
-  <div class="update-field">
-    <h2>Update Services</h2>
-    <select name="category" id="category" class="select-tag">
-      <option value="">-- Select Category --</option>
-      <option value="Electronics/Appliances">Electronics/Applainces</option>
-      <option value="Electrical">Electrical</option>
-      <option value="Construction">Construction</option>
-      <option value="RMS">RMS</option>
-    </select><br><br>
-    <div class="select-needs" id="selectNeeds" name="selectNeeds"></div>
-    <div class="select-type" id="selectType" name="selectName"></div>
-
-  </div>
+  <?php echo $adminNavigation; ?>
+  <div class="content">
+    <div class="container">
+      <div class="select-class">
+        <h2>Update Services</h2>
+        <br>
+        <h5>Select Category:</h5>
+        <select name="category" id="category" class="select-tag">
+          <option value="">-- Select Category --</option>
+          <option value="Electronics/Appliances">Electronics/Applainces</option>
+          <option value="Electrical">Electrical</option>
+          <option value="Construction">Construction</option>
+          <option value="RMS">RMS</option>
+        </select><br><br>
+        <div class="select-needs" id="selectNeeds" name="selectNeeds"></div>
+        <div class="select-type" id="selectType" name="selectName"></div>
+        <button class="show-services">Show</button>
+      </div>
+    </div>
 </body>
 
 <footer class="all-footer">
