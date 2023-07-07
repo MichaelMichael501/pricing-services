@@ -21,7 +21,7 @@ $adminNavigation=
     <img src="../img/AyusinkophlogoPNG.png" alt="logo" class="head-logo">
     <div class="navigation-link">
       <a href="../index.php">Home</a>
-      <a href="#">Logout</a>
+      <a href="../process/logout.php">Logout</a>
     </div>
   </div>
 
