@@ -167,12 +167,24 @@ ul.list-services{
     border: none;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
     width: 100px;
-    margin-top: 20px;
-    float: right;
+    margin-top: 30px;
+    margin-bottom: 20px;
     border-radius: 10px;
     padding-left: 5px;
     font-family: MyCustomFont;
     font-size: 18px;
     transition: transform 0.2s ease;
     padding: 10px;
+}
+
+.show-services:active,
+.show-services:focus {
+  transform: scale(0.95);
+  /* Add any additional styles for the focus or active state */
+}
+
+
+.show-services:active:active,
+.show-services:focus:active {
+  transform: scale(1);
 }
