@@ -33,8 +33,10 @@ include('../process/config.php');
           <option value="RMS">RMS</option>
         </select><br><br>
         <div class="select-needs" id="selectNeeds" name="selectNeeds"></div>
-        <div class="select-type" id="selectType" name="selectName"></div>
-        <button class="show-services">Show</button>
+        <div class="select-type" id="selectTypeField" name="selectTypeField"></div>
+        <button class="show-services" name="showServices" id="showServices">Show</button>
+      </div>
+      <div class="show-price" id="servicesField" name="servicesField">
       </div>
     </div>
 </body>

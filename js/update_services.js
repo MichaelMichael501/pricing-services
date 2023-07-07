@@ -21,9 +21,26 @@ $(document).ready(function () {
             type: 'POST',
             data: { Device:core  },
             success: function (response) {
-                $('#selectType').html(response);
+                $('#selectTypeField').html(response);
+
+    /**** Show all data of Selected Services ******************************************************************/
+                $('#showServices').click(function() {
+                    var selectedType = $('#selectType').val();
+          
+                    $.ajax({
+                      url: '../include/update_value_price.php',
+                      type: 'POST',
+                      data: { selectedType: selectedType },
+                      success: function(response) {
+                        $('#servicesField').html(response);
+                        
+                      }
+                    });
+                  });
 
             }
+            
+    /**********************************************************************/
         });
     });
     /**********************************************************************/
