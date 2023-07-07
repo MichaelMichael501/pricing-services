@@ -10,9 +10,29 @@ $(document).ready(function () {
             success: function (response) {
                 $('#selectNeeds').html(response);
 
+
+                
+    /**** Select The Type of Need Services**********************************/
+    $('#selectServices').change(function () {
+        var core = $(this).val();
+
+        $.ajax({
+            url: '../include/device_type.php',
+            type: 'POST',
+            data: { Device:core  },
+            success: function (response) {
+                $('#selectType').html(response);
+
             }
         });
     });
     /**********************************************************************/
+
+
+            }
+        });
+    });
+    /**********************************************************************/
+
 
 });
