@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<?php
+include('../include/include_body.php');
+//include('../include/authentication.php');
+include('../process/config.php');
+?>
+<? ?>
+<html lang="en">
+
+<head>
+  <title>Add Services</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="../css/pricing_service.css">
+  <link rel="stylesheet" type="text/css" href="../css/body.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="../js/update_type.js"></script>
+</head>
+
+<body>
+  <div class="update-field">
+    <h2>Update Services</h2>
+    <select name="category" id="category" class="select-tag">
+      <option value="">-- Select Category --</option>
+      <option value="Electronics/Applainces">Electronics/Applainces</option>
+      <option value="Electrical">Electrical</option>
+      <option value="Construction">Construction</option>
+      <option value="RMS">RMS</option>
+    </select><br><br>
+    <div class="select-needs" id="selectNeeds" name="selectNeeds"></div>
+    
+
+  </div>
+</body>
+
+<footer class="all-footer">
+  <img src="../img/AyusinkophlogoPNG.png" alt="logo" class="head-logo">
+</footer>
+
+</html>
