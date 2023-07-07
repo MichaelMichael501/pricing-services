@@ -25,7 +25,7 @@ include('../process/config.php');
       <h2>Add needed service</h2>
       <select name="category" id="category" class="select-tag">
         <option value="">-- Select Category --</option>
-        <option value="Electronics/Applainces">Electronics/Applainces</option>
+        <option value="Electronics/Appliances">Electronics/Applainces</option>
         <option value="Electrical">Electrical</option>
         <option value="Construction">Construction</option>
         <option value="RMS">RMS</option>

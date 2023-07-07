@@ -14,7 +14,7 @@ include('../process/config.php');
   <link rel="stylesheet" type="text/css" href="../css/pricing_service.css">
   <link rel="stylesheet" type="text/css" href="../css/body.css">
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="../js/update_type.js"></script>
+  <script src="../js/update_services.js"></script>
 </head>
 
 <body>
@@ -22,7 +22,7 @@ include('../process/config.php');
     <h2>Update Services</h2>
     <select name="category" id="category" class="select-tag">
       <option value="">-- Select Category --</option>
-      <option value="Electronics/Applainces">Electronics/Applainces</option>
+      <option value="Electronics/Appliances">Electronics/Applainces</option>
       <option value="Electrical">Electrical</option>
       <option value="Construction">Construction</option>
       <option value="RMS">RMS</option>

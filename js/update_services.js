@@ -1,14 +1,14 @@
 $(document).ready(function () {
     /**** Select Need Services*********************************************/
-    $('#selectedType').change(function () {
-        var typeId = $(this).val();
+    $('#category ').change(function () {
+        var category = $(this).val();
 
         $.ajax({
             url: '../include/needs_service_list.php',
             type: 'POST',
-            data: { typeId: typeId },
+            data: { category: category },
             success: function (response) {
-                $('#services').html(response);
+                $('#selectNeeds').html(response);
 
             }
         });
