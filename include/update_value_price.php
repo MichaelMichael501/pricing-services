@@ -49,7 +49,7 @@ if ($selectedDevice) {
     echo "<h4>All Services</h4>";
     echo "<h5>".$valueservice['name']."</h5>";
     echo "<h5>Fee: &#x20B1;".$valueLoop['price']."</h5>";
-    echo "<h5>New Fee: &#x20B1; <input type='number' class='add-btn'/></h5>";
+    echo "<h5>New Fee: &#x20B1; <input type='number' class='add-btn'/><button>Update</button></h5>";
   }
   echo"</div>";
 
