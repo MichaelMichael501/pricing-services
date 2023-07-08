@@ -20,11 +20,11 @@ $adminNavigation=
 <div class="navigation">
     <img src="../img/AyusinkophlogoPNG.png" alt="logo" class="head-logo">
     <div class="navigation-link">
-      <a href="../index.php">Home</a>
+      <a href="../admin/add_services.php">Add Services</a>
+      <a href="../admin/update_services.php">Update Services</a>
       <a href="../process/logout.php">Logout</a>
     </div>
   </div>
-
 HTML;
 
 ?>
