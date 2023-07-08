@@ -22,6 +22,7 @@ $adminNavigation=
     <div class="navigation-link">
       <a href="../admin/add_services.php">Add Services</a>
       <a href="../admin/update_services.php">Update Services</a>
+      <a href="../admin/service_table_list.php">Services List</a>
       <a href="../process/logout.php">Logout</a>
     </div>
   </div>
