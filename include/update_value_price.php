@@ -40,12 +40,18 @@ if ($selectedDevice) {
   echo $valueType['type'] . "<br><br>";
   echo "</div>";
   echo "</div>";
-  while($valueLoop = mysqli_fetch_array($devices)){
+  echo "<div class='all-services'>";
+  $devicesLoop = @mysqli_query($con, "SELECT * FROM `pricing` WHERE `type`='$selectedDevice'");
+  while($valueLoop = mysqli_fetch_array($devicesLoop)){
     $unitServiceId=$valueLoop['services'];
     $unitService = @mysqli_query($con, "SELECT * FROM `services` WHERE `id`='$unitServiceId'");
     $valueservice = mysqli_fetch_array($unitService);
-    
+    echo "<h4>All Services</h4>";
+    echo "<h5>".$valueservice['name']."</h5>";
+    echo "<h5>Fee: &#x20B1;".$valueLoop['price']."</h5>";
+    echo "<h5>New Fee: &#x20B1; <input type='number' class='add-btn'/></h5>";
   }
+  echo"</div>";
 
   
 }

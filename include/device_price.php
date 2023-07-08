@@ -34,7 +34,10 @@ if ($selectedDevice) {
 
   /**Unit Image*******************************/
   echo "<div class = 'unit'>";
-  echo "<img src='" . $valueType['photo_dir'] . "' class='unit-image' alt='Image'>";
+  $photoDir;
+  if($valueType['photo_dir']!=""){$photoDir=$valueType['photo_dir'];}
+  else{$photoDir="img/AyusinkophlogoPNG.png";}
+  echo "<img src='" . $photoDir . "' class='unit-image' alt='Image'>";
   echo "<div class='unit-desc'>";
   /*******************************************/
 
