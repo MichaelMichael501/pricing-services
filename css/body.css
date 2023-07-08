@@ -188,3 +188,29 @@ ul.list-services{
 .show-services:focus:active {
   transform: scale(1);
 }
+
+.update-btn{
+    margin-left: 20px;
+    font-family: MyCustomFont;
+    background-color: #9cfdbc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding-left: 5px;
+    font-family: MyCustomFont;
+    font-size: 18px;
+    transition: transform 0.2s ease;
+    padding: 10px;
+}
+
+
+.update-btn:active,
+.update-btn:focus {
+  transform: scale(0.95);
+  /* Add any additional styles for the focus or active state */
+}
+
+
+.update-btn:active:active,
+.update-btn:focus:active {
+  transform: scale(1);
+}
