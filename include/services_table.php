@@ -30,7 +30,8 @@
             $typeValue = mysqli_fetch_array($type);
             $services=mysqli_query($con,"SELECT * FROM `services` WHERE id='$serviceId'");
             $serviceValue = mysqli_fetch_array($services);
-            echo "<form action='' method='post'><li class='table-row'>";
+            echo "<form action='../process/remove_services.php' method='post'><li class='table-row'>";
+            echo "<input type='hidden' name='serviceId' id='serviceId' value='".$value['id']."'>";
             echo "<div class='col col-1' data-label='Id'>".$value['id']."</div>";
             echo "<div class='col col-2' data-label='Device/Requisite'>".$reqValue['name']."</div>";
             echo "<div class='col col-3' data-label='Type'>".$typeValue['type']."</div>";
