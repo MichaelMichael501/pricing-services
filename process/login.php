@@ -18,15 +18,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $_SESSION['auth'] = session_id();
             header("location:../admin/add_services.php");
         } else {
-            $error = "Password is invalid";
-            echo '<script type="text/javascript">';
-            echo ' alert("' . $error . '")';  //not showing an alert box.
-            echo '</script>';
+            echo '<script>
+            alert("Invalid Password.");
+            window.location.href="../admin/";
+            </script>';
         }
     } else {
-        $error = "Login is invalid";
-        echo '<script type="text/javascript">';
-        echo ' alert("' . $error . '")';  //not showing an alert box.
-        echo '</script>';
+        echo '<script>
+            alert("Invalid Login");
+            window.location.href="../admin/";
+            </script>';
     }
 }
