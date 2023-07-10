@@ -6,6 +6,7 @@ include('../process/config.php');
 
 /**Get the Id of pricing using Ajax Request***/
 $selectedDevice = $_POST["selectedType"];
+$category=""; 
 /*********************************************/
 
 if ($selectedDevice) {
@@ -34,10 +35,12 @@ if ($selectedDevice) {
   
   /*******************************************/
 
-  echo "<label>Unit name:</label><br>";
-  echo $valueName['name'] . "<br><br>";
-  echo "<label>Unit Type:</label><br>";
-  echo $valueType['type'] . "<br><br>";
+  echo "<label>Unit name:</label><br><br>";
+  include('device_list.php');
+  echo "<button id=updateDevice class='update-btn'>Update</button>";
+  echo "<br><br><label>Unit Type:</label><br><br>";
+  include('type_list.php');
+  echo "<br><br>";
   echo "</div>";
   echo "</div>";
   echo "<div class='all-services'>";
