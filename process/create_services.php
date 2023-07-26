@@ -11,7 +11,7 @@ if ($selectedType && $selectedServices && $inputFee) {
     $valueUnit = mysqli_fetch_array($unitType);
     $deviceId = $valueUnit['device'];
     $unitName = mysqli_query($con, "INSERT INTO `pricing`(`device`, `type`, `services`, `price`) VALUES ('$deviceId','$selectedType','$selectedServices','$inputFee')");
-    echo 'Service and price successfully added';
+    echo 'Service and fee successfully added';
 } else {
     echo 'All fields must be filled';
 }

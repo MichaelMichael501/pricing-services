@@ -40,7 +40,26 @@ $(document).ready(function () {
         });
     });
 
-    //Add Services 
+    //add Services
+    $('#addDevice').click(function () {
+        var deviceName = $('#deviceField').val();
+        var category = $('#category').val();
+
+        $.ajax({
+            url: '../process/add_services.php',
+            type: 'POST',
+            data: { deviceName: deviceName, category: category },
+            success: function (response) {
+                alert(response);
+                location.reload();
+
+            }
+        });
+    });
+
+
+
+    //Create Services 
     $('#addServices').click(function () {
         var type = $('#selectedType').val();
         var services = $('input[name="selectedItems"]:checked').val();

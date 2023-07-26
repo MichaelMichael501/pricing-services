@@ -63,7 +63,7 @@ include('../process/config.php');
                     <br>
                     <input type="file" class="text-field" name="myFileInput" id="myFileInput" accept="image/*">
                     <br>
-                    <button role="button" id="addService" name="addService" class="add-typebtn">Add</button>
+                    <button role="button" id="addType" name="addType" class="add-typebtn">Add</button>
                     <br>
                     <br>
                 </div>
@@ -78,7 +78,7 @@ include('../process/config.php');
                     <label for="neededServices" id="">Type of Service</label>
                 </div>
                 <br>
-                <button role="button" id="addDevice" name="addDevice" class="add-typebtn">Add</button>
+                <button role="button" id="addService" name="addService" class="add-typebtn">Add</button>
             </div>
 
 
