@@ -19,7 +19,7 @@ include('../process/config.php');
         
     
     echo'</select><br>';
-    
+    include('select_location');
     echo '<input type="submit" id="showPrice" name="showPrice" value="Check The Price" class="pricing-btn">';
       
 
