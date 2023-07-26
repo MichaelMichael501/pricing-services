@@ -19,7 +19,8 @@ include('../process/config.php');
         
     
     echo'</select><br>';
-    include('select_location');
+    include('select_location.php');
+    echo '<br>';
     echo '<input type="submit" id="showPrice" name="showPrice" value="Check The Price" class="pricing-btn">';
       
 

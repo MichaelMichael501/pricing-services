@@ -42,18 +42,25 @@ include('../process/config.php');
       $category = "";
       include('../include/device_list.php');
       ?><br><br>
-      <label for="">needed services Type:</label>
+
       <input type="text" class="add-btn" name="typeField" id="typeField"><br><br>
       <input type="file" name="myFileInput" id="myFileInput" accept="image/*">
       <br>
       <button role="button" id="addType" name="addType" class="add-typebtn">Add</button>
     </div>
+
+    <div class="include-services">
+      <label for="">Type of property:</label>
+      <input type="text" class="add-btn" name="" id="">
+    </div>
+
+
   </div>
-  
+
   <div class="add-services">
-    
+
     <div class="select-price">
-    <h2>Add Services</h2>
+      <h2>Add Services</h2>
       <?php $devices = @mysqli_query($con, "SELECT * FROM `device_type`");
       echo '<select name="selectedType" id="selectedType" class="select-tag">';
       echo "<option value=''>--Select Type--</option>";
@@ -71,8 +78,8 @@ include('../process/config.php');
 
     <div class="choose-services" id="services"></div>
     <div class='add-servicesbtn'><button role="button" id="addServices" name="addServices" class="add-typebtn">Add</button></div>
-    
-  </div>                                                                                                                                                                                           
+
+  </div>
 
 </body>
 
