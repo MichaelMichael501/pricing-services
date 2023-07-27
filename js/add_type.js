@@ -41,14 +41,13 @@ $(document).ready(function () {
     });
 
     //add Services
-    $('#addDevice').click(function () {
-        var deviceName = $('#deviceField').val();
-        var category = $('#category').val();
+    $('#addServices').click(function () {
+        var serviceName = $('#serviceField').val();
 
         $.ajax({
             url: '../process/add_services.php',
             type: 'POST',
-            data: { deviceName: deviceName, category: category },
+            data: { serviceName: serviceName },
             success: function (response) {
                 alert(response);
                 location.reload();
@@ -60,7 +59,7 @@ $(document).ready(function () {
 
 
     //Create Services 
-    $('#addServices').click(function () {
+    $('#createServices').click(function () {
         var type = $('#selectedType').val();
         var services = $('input[name="selectedItems"]:checked').val();
         var price = $('#fee').val();

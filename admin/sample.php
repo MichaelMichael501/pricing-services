@@ -46,7 +46,6 @@ include('../process/config.php');
                 <br>
                 <button role="button" id="addDevice" name="addDevice" class="add-typebtn">Add</button>
             </div>
-
             <!--add type of particular-->
             <div class="add-particulars">
                 <h4>Add Type</h4>
@@ -73,12 +72,12 @@ include('../process/config.php');
             <div class="add-particulars">
                 <h4>Add type of Services</h4>
                 <div class="form-contain">
-                    <input type="text" class="text-field" name="deviceField" id="deviceFieldx">
+                    <input type="text" class="text-field" name="serviceField" id="serviceField">
                     <br>
                     <label for="neededServices" id="">Type of Service</label>
                 </div>
                 <br>
-                <button role="button" id="addService" name="addService" class="add-typebtn">Add</button>
+                <button role="button" id="addServices" name="addServices" class="add-typebtn">Add</button>
             </div>
 
 

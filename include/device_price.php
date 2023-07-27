@@ -41,17 +41,19 @@ if ($selectedDevice) {
   echo "<div class='unit-desc'>";
   /*******************************************/
 
-  echo "<label>Unit name:</label><br>";
+  echo "<label>Name:</label><br>";
   echo $valueName['name'] . "<br><br>";
-  echo "<label>Unit Type:</label><br>";
+  echo "<label>Type:</label><br>";
   echo $valueType['type'] . "<br><br>";
   echo "<label>Service:</label><br>";
   echo $valueservice['name'] . "<br>";
   echo "</div>";
   echo "</div>";
   echo "<div class='fee'>";
-  echo "<label>" . $valueservice['name'] . " Fee</label><br>";
-  echo "<p class='amount'>&#x20B1;" . $value['price'] . "</p> Per Unit";
+  echo "<label id='labelValue'>" . $valueservice['name'] . " Fee</label><br>";
+  echo "<input type='hidden' name='amountValue' id='amountValue' value='" . $value['price'] . "'>";
+  echo "<p class='amount'>&#x20B1;" . $value['price'] . "</p> Per ".$value['rate_per'];
+  echo "<p class='per_rate' id='result'>";
   echo "</div>";
   if ($valueservice['id'] == '2') {
     echo "<div class='descrip'>";
