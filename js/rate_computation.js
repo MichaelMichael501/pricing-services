@@ -1,11 +1,11 @@
-// Function to calculate the sum and handle empty text field as zero
 function calculateSum() {
-    const labelValue = parseFloat(document.getElementById('labelValue').innerText) || 0;
+    const labelValue = parseFloat(document.getElementById('amountValue').value) || 0;
     const textFieldValue = parseFloat(document.getElementById('textFieldValue').value) || 0;
     
-    const sum = labelValue + textFieldValue;
-  
-    document.getElementById('result').innerText = `Result: ${sum}`;
+    const sum = labelValue * textFieldValue;
+    const roundedSum = sum.toFixed(2);
+
+    document.getElementById('perRate').innerHTML = `Total: &#x20B1; ${roundedSum}`;
   }
   
   // Attach event listener to the text field to trigger calculation on change

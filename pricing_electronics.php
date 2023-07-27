@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<?php 
+<?php
 include('include/include_body.php');
 include('process/config.php');
-$category='Electronics/Appliances';
+$category = 'Electronics/Appliances';
 ?>
 <html lang="en">
 
@@ -18,8 +18,8 @@ $category='Electronics/Appliances';
 </head>
 
 <body>
-  
-<?php echo $navigation;?>
+
+  <?php echo $navigation; ?>
 
   <div class="content">
     <h1 class="page-title">Transparent Pricing of Electronics and Appliances</h1>
@@ -38,7 +38,7 @@ $category='Electronics/Appliances';
         <div id="result" class="device-type"></div>
 
         <div id="services" class="device-services"></div>
-         
+
 
       </div>
       <div class="show-price" id="price" name="price">
@@ -46,9 +46,10 @@ $category='Electronics/Appliances';
       </div>
     </div>
   </div>
+  
 </body>
 <footer class="all-footer">
-<img src="img/AyusinkophlogoPNG.png" alt="logo" class="head-logo">
+  <img src="img/AyusinkophlogoPNG.png" alt="logo" class="head-logo">
 </footer>
 
 </html>

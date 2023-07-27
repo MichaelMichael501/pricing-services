@@ -52,8 +52,10 @@ if ($selectedDevice) {
   echo "<div class='fee'>";
   echo "<label id='labelValue'>" . $valueservice['name'] . " Fee</label><br>";
   echo "<input type='hidden' name='amountValue' id='amountValue' value='" . $value['price'] . "'>";
-  echo "<p class='amount'>&#x20B1;" . $value['price'] . "</p> Per ".$value['rate_per'];
-  echo "<p class='per_rate' id='result'>";
+  if($value['rate_per'] == "unit"){$unitSign=$value['rate_per'];}else{$unitSign="ft²";}
+  echo "<p class='amount'>&#x20B1;" . $value['price'] . "</p> Per ".$unitSign;
+  echo "<br><br>Number of ".$unitSign.":  <input type='text' class='items' name='textFieldValue' id='textFieldValue'>";
+  echo "<p class='rate' id='perRate'></p>";
   echo "</div>";
   if ($valueservice['id'] == '2') {
     echo "<div class='descrip'>";
@@ -121,18 +123,19 @@ if ($selectedDevice) {
   echo "<h3>Notes:</h3>";
   if ($valueName['id'] == 1) {
     echo "<p>a. Php 395 due if canceled while technician is on-site.</p>";
-    echo "<p>b. +Php 350 for unit located above 10ft/3m";
-    echo "<p>c. Materials, repairs, freon, permits & parking fees are not included.";
-    echo "<p>d. Prices include 12% VAT.";
+    echo "<p>b. +Php 350 for unit located above 10ft/3m</p>";
+    echo "<p>c. Materials, repairs, freon, permits & parking fees are not included.</p>";
+    echo "<p>d. Prices include 12% VAT.</p>";
   }
 
   else{
     echo "<p>a. Php 395 due if canceled while technician is on-site.</p>";
-    echo "<p>b. Materials, permits & parking fees are not included.";
-    echo "<p>c. Prices include 12% VAT.";
+    echo "<p>b. Materials, permits & parking fees are not included.</p>";
+    echo "<p>c. Prices include 12% VAT.</p>";
   }
 
 
 
   echo "</div>";
+  echo'<script src="js/rate_computation.js"></script>';
 }

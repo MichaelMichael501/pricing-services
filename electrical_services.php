@@ -46,6 +46,7 @@ $category='Electrical';
       </div>
     </div>
   </div>
+  <script src="js/rate_computation.js"></script>
 </body>
 <footer class="all-footer">
 <img src="img/AyusinkophlogoPNG.png" alt="logo" class="head-logo">

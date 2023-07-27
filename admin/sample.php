@@ -79,10 +79,20 @@ include('../process/config.php');
                 <br>
                 <button role="button" id="addServices" name="addServices" class="add-typebtn">Add</button>
             </div>
+        </div>
 
-
-
-
+        <div class="add-particulars">
+        <div class="form-contain">
+                    <?php
+                        include('../include/admin_paritcular_list.php')
+                    ?>
+                    <br>
+                    <label for="neededServices" id="">Particulars</label>
+                    <br>
+                    <input type="text" class="text-field" name="rateField" id="rateField">
+                    <br>
+                    <label for="neededServices" id="">Type of Service</label>
+                </div>
         </div>
 
 

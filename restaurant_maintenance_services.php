@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<?php 
+<?php
 include('include/include_body.php');
 include('process/config.php');
-$category='RMS';
+$category = 'RMS';
 ?>
 <html lang="en">
 
@@ -18,8 +18,8 @@ $category='RMS';
 </head>
 
 <body>
-  
-<?php echo $navigation;?>
+
+  <?php echo $navigation; ?>
 
   <div class="content">
     <h1 class="page-title">Transparent Pricing of Restaurant Maintenance Services</h1>
@@ -46,9 +46,10 @@ $category='RMS';
       </div>
     </div>
   </div>
+  <script src="js/rate_computation.js"></script>
 </body>
 <footer class="all-footer">
-<img src="img/AyusinkophlogoPNG.png" alt="logo" class="head-logo">
+  <img src="img/AyusinkophlogoPNG.png" alt="logo" class="head-logo">
 </footer>
 
 </html>
