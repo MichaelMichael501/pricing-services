@@ -16,6 +16,7 @@ include('../process/config.php');
     <link rel="stylesheet" type="text/css" href="../css/add_services.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="../js/add_type.js"></script>
+    <script src="../js/create_services.js"></script>
 </head>
 
 <body>
@@ -81,18 +82,34 @@ include('../process/config.php');
             </div>
         </div>
 
-        <div class="add-particulars">
-        <div class="form-contain">
-                    <?php
-                        include('../include/admin_paritcular_list.php')
-                    ?>
-                    <br>
-                    <label for="neededServices" id="">Particulars</label>
-                    <br>
-                    <input type="text" class="text-field" name="rateField" id="rateField">
-                    <br>
-                    <label for="neededServices" id="">Type of Service</label>
-                </div>
+        <div class="add-services">
+
+            <div class="select-price">
+                <h2>Add Services</h2>
+                <?php $devices = @mysqli_query($con, "SELECT * FROM `device_type`");
+                echo '<select name="selectedType" id="selectedType" class="select-tag">';
+                echo "<option value=''>--Select Type--</option>";
+
+                while ($value = mysqli_fetch_array($devices)) {
+                    echo "<option value='" . $value['id'] . "'>" . $value['type'] . "</option>";
+                }
+
+                echo '</select>';
+                ?>
+                <br><br>
+                <select name="ratePer" id="ratePer" class="select-tag">
+                    <option value="">-- Select Rate per --</option>
+                    <option value="unit">unit</option>
+                    <option value="square feet">ft²</option>
+                </select>
+                <h5>Rate:</h5>
+                <input type="number" id="fee" name="fee" class="add-btn">
+                <br>
+            </div>
+
+            <div class="choose-services" id="services"></div>
+            <div class='add-servicesbtn'><button role="button" id="addServices" name="addServices" class="add-typebtn">Add</button></div>
+
         </div>
 
 

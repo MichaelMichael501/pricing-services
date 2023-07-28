@@ -239,8 +239,6 @@ footer {
 
 .add-services {
     display: flex;
-    margin-top: 50px;
-    margin-left: 50px;
     padding: 10px 10px 10px 10px;
     border: 1px solid #ccc;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);

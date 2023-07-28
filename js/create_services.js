@@ -3,11 +3,11 @@ $(document).ready(function () {
         var selectedDevice = $(this).val();
 
         $.ajax({
-            url: 'include/device_type.php',
+            url: 'include/type_particular.php',
             type: 'POST',
             data: { Device: selectedDevice },
             success: function (response) {
-                $('#result').html(response);
+                $('#selectType').html(response);
             }
         });
     });
