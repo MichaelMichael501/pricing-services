@@ -39,6 +39,9 @@ include('../process/config.php');
       <div class="show-price" id="servicesField" name="servicesField">
       </div>
     </div>
+    <?php
+    echo $adminScript;
+    ?>
 </body>
 
 <footer class="all-footer">

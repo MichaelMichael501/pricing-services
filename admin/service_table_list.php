@@ -20,10 +20,12 @@ include('../process/config.php');
 <body>
   <?php echo $adminNavigation; ?>
 
-    <?php include('../include/services_table.php');?>
+  <?php include('../include/services_table.php'); ?>
 
 
-
+  <?php
+  echo $adminScript;
+  ?>
   <script src="../js/search_filter.js"></script>
 </body>
 
@@ -31,4 +33,4 @@ include('../process/config.php');
   <img src="../img/AyusinkophlogoPNG.png" alt="logo" class="head-logo">
 </footer>
 
-</html> 
+</html>
