@@ -118,6 +118,7 @@ include('../process/config.php');
 
 
     <script src="../js/add_services.js"></script>
+    <script src="../js/account_dropdown.js"></script>
 
 </body>
 

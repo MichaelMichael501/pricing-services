@@ -22,11 +22,7 @@ body {
 
 
 
-.navigation-link {
-    float: right;
-    margin-right: 20px;
-    margin-top: 25px;
-}
+
 
 .head-logo {
     max-width: fit-content;
@@ -317,4 +313,74 @@ ul.list-services {
 .update-btn:active:active,
 .update-btn:focus:active {
     transform: scale(1);
+}
+
+
+/*************** Navigation Admin****************************/
+/* Styling for the dropdown menu */
+/* Default styles for the dropdown */
+/* Default styles for the dropdown */
+/* Default styles for the navigation bar */
+.admin-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #9cfdbc;
+}
+
+/* Default styles for the dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Default styles for the dropdown content */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  right: 0; /* Position the dropdown content to the right */
+}
+
+/* Default styles for the menu items */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change the color of menu items on hover */
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Media query for responsiveness */
+@media screen and (max-width: 768px) {
+  /* Adjust the dropdown position for smaller screens */
+  .dropdown {
+    margin-left: 10px; /* Change this value according to your preference */
+  }
+
+  /* Adjust the dropdown content position for smaller screens */
+  .dropdown-content {
+    position: static; /* Change this to "relative" if needed */
+    min-width: 100%; /* Adjust the width as needed */
+    box-shadow: none; /* Remove the box shadow on smaller screens */
+    right: auto; /* Reset right position on smaller screens */
+  }
+
+  /* Hide the menu items by default on smaller screens */
+  .dropdown-content a {
+    display: none;
+  }
+
+  /* Display the menu items when the dropdown is clicked */
+  .dropdown:hover .dropdown-content a {
+    display: block;
+  }
 }
