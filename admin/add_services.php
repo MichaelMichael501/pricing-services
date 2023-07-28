@@ -123,7 +123,3 @@ echo $adminScript;
 
 </body>
 
-
-<footer class="all-footer">
-    <img src="../img/AyusinkophlogoPNG.png" alt="logo" class="head-logo">
-</footer>

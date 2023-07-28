@@ -29,8 +29,5 @@ include('../process/config.php');
   <script src="../js/search_filter.js"></script>
 </body>
 
-<footer class="all-footer">
-  <img src="../img/AyusinkophlogoPNG.png" alt="logo" class="head-logo">
-</footer>
 
 </html>
