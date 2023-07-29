@@ -1,13 +1,13 @@
 @font-face {
-    font-family: MyCustomFont;
-    src: url('../font/Montserrat-VariableFont_wght.ttf');
+  font-family: MyCustomFont;
+  src: url('../font/Montserrat-VariableFont_wght.ttf');
 }
 
 
 body {
-    font-family: MyCustomFont;
-    align-items: center;
-    margin: 0;
+  font-family: MyCustomFont;
+  align-items: center;
+  margin: 0;
 }
 
 .navigation {
@@ -32,18 +32,18 @@ body {
 
 
 .head-logo {
-    max-width: fit-content;
-    max-height: fit-content;
-    width: 70px;
+  max-width: fit-content;
+  max-height: fit-content;
+  width: 70px;
 }
 
 a {
-    margin-right: 20px;
-    margin-bottom: 10px;
-    font-family: MyCustomFont;
-    font-weight: 600;
-    color: #18272F;
-    text-decoration: none;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  font-family: MyCustomFont;
+  font-weight: 600;
+  color: #18272F;
+  text-decoration: none;
 }
 
 
@@ -51,7 +51,7 @@ a {
 
 /* Footer Styles */
 footer {
-  
+
   background-color: #9cfdbc;
   padding: 30px 0;
   bottom: 0;
@@ -71,11 +71,11 @@ footer {
   width: 50px;
   height: 50px;
   margin-right: 10px;
-  
+
 }
 
-.footer-logo{
-    margin-left: 20px;
+.footer-logo {
+  margin-left: 20px;
 }
 
 .footer-links ul {
@@ -94,8 +94,8 @@ footer {
   color: #333;
 }
 
-.footer-social{
-    margin-right: 30px;
+.footer-social {
+  margin-right: 30px;
 }
 
 .footer-social ul {
@@ -141,88 +141,89 @@ footer {
 
 /* Add custom styles for the construction contractors list */
 .contractors-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    list-style-type: none;
-    padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
 
 }
 
 .contractors-container {
-    text-align: center;
+  text-align: center;
 }
 
 .contractors-list li {
-    margin: 10px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 10px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 10px;
 }
 
 @media screen and (max-width: 600px) {
-    .contractors-list li {
-      font-size: 10px;
-    }
-    .contractors-container {
-        text-align: center;
-        margin-top: 170px;
-    }
+  .contractors-list li {
+    font-size: 10px;
   }
+
+  .contractors-container {
+    text-align: center;
+    margin-top: 170px;
+  }
+}
 
 
 
 .content {
-    margin-top: 50px;
-    padding-left: 10%;
-    padding-right: 10%;
+  margin-top: 50px;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 /****Admin Add Services****/
 
 .appliances-services {
-    margin-right: 10px;
-    padding: 10px 10px 10px 10px;
-    border: 1px solid #ccc;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    width: fit-content;
+  margin-right: 10px;
+  padding: 10px 10px 10px 10px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  width: fit-content;
 
 }
 
 .appliances-electronics {
-    display: flex;
-    border-radius: 10px;
-    margin-top: 10px;
-    margin-left: 50px;
+  display: flex;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-left: 50px;
 }
 
 .add-btn {
-    border-radius: 10px;
-    padding-left: 5px;
-    font-family: MyCustomFont;
-    font-size: 18px;
+  border-radius: 10px;
+  padding-left: 5px;
+  font-family: MyCustomFont;
+  font-size: 18px;
 }
 
 .title-add {
-    margin-top: 100px;
-    margin-left: 50px;
+  margin-top: 100px;
+  margin-left: 50px;
 }
 
 .add-typebtn {
-    background-color: #9cfdbc;
-    border: none;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-    width: 100px;
-    margin-top: 20px;
-    float: right;
-    border-radius: 10px;
-    padding-left: 5px;
-    font-family: MyCustomFont;
-    font-size: 18px;
-    transition: transform 0.2s ease;
-    padding: 10px;
+  background-color: #9cfdbc;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  width: 100px;
+  margin-top: 20px;
+  float: right;
+  border-radius: 10px;
+  padding-left: 5px;
+  font-family: MyCustomFont;
+  font-size: 18px;
+  transition: transform 0.2s ease;
+  padding: 10px;
 
 }
 
@@ -230,96 +231,96 @@ footer {
 
 .add-typebtn:active,
 .add-typebtn:focus {
-    transform: scale(0.95);
-    /* Add any additional styles for the focus or active state */
+  transform: scale(0.95);
+  /* Add any additional styles for the focus or active state */
 }
 
 
 .add-typebtn:active:active,
 .add-typebtn:focus:active {
-    transform: scale(1);
+  transform: scale(1);
 }
 
 .add-services {
-    display: flex;
-    padding: 10px 10px 10px 10px;
-    border: 1px solid #ccc;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    width: fit-content;
+  display: flex;
+  padding: 10px 10px 10px 10px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  width: fit-content;
 }
 
 ul.list-services {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 .title-list {
-    margin-left: 45px;
+  margin-left: 45px;
 }
 
 .choose-services {
-    margin-left: 20px;
-    margin-top: 50px;
-    margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 50px;
+  margin-right: 20px;
 }
 
 .add-servicesbtn {
-    margin-left: 50px;
-    margin-top: 200px;
+  margin-left: 50px;
+  margin-top: 200px;
 
 }
 
 .show-services {
-    background-color: #9cfdbc;
-    border: none;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-    width: 100px;
-    margin-top: 30px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    padding-left: 5px;
-    font-family: MyCustomFont;
-    font-size: 18px;
-    transition: transform 0.2s ease;
-    padding: 10px;
+  background-color: #9cfdbc;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  width: 100px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  padding-left: 5px;
+  font-family: MyCustomFont;
+  font-size: 18px;
+  transition: transform 0.2s ease;
+  padding: 10px;
 }
 
 .show-services:active,
 .show-services:focus {
-    transform: scale(0.95);
-    /* Add any additional styles for the focus or active state */
+  transform: scale(0.95);
+  /* Add any additional styles for the focus or active state */
 }
 
 
 .show-services:active:active,
 .show-services:focus:active {
-    transform: scale(1);
+  transform: scale(1);
 }
 
 .update-btn {
-    margin-left: 20px;
-    font-family: MyCustomFont;
-    background-color: #9cfdbc;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
-    padding-left: 5px;
-    font-family: MyCustomFont;
-    font-size: 18px;
-    transition: transform 0.2s ease;
-    padding: 10px;
+  margin-left: 20px;
+  font-family: MyCustomFont;
+  background-color: #9cfdbc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  padding-left: 5px;
+  font-family: MyCustomFont;
+  font-size: 18px;
+  transition: transform 0.2s ease;
+  padding: 10px;
 }
 
 
 .update-btn:active,
 .update-btn:focus {
-    transform: scale(0.95);
-    /* Add any additional styles for the focus or active state */
+  transform: scale(0.95);
+  /* Add any additional styles for the focus or active state */
 }
 
 
 .update-btn:active:active,
 .update-btn:focus:active {
-    transform: scale(1);
+  transform: scale(1);
 }
 
 
@@ -339,8 +340,11 @@ ul.list-services {
 }
 
 /* Default styles for the dropdown */
-.profile-pic{
+.profile-pic {
+  margin-top: 10px;
   border-radius: 50px;
+  width: 70px;
+  height: 70px;
 }
 
 .dropdown {
@@ -356,7 +360,8 @@ ul.list-services {
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
-  right: 0; /* Position the dropdown content to the right */
+  right: 0;
+  /* Position the dropdown content to the right */
 }
 
 /* Default styles for the menu items */
@@ -374,17 +379,23 @@ ul.list-services {
 
 /* Media query for responsiveness */
 @media screen and (max-width: 768px) {
+
   /* Adjust the dropdown position for smaller screens */
   .dropdown {
-    margin-left: 10px; /* Change this value according to your preference */
+    margin-left: 10px;
+    /* Change this value according to your preference */
   }
 
   /* Adjust the dropdown content position for smaller screens */
   .dropdown-content {
-    position: static; /* Change this to "relative" if needed */
-    min-width: 100%; /* Adjust the width as needed */
-    box-shadow: none; /* Remove the box shadow on smaller screens */
-    right: auto; /* Reset right position on smaller screens */
+    position: static;
+    /* Change this to "relative" if needed */
+    min-width: 100%;
+    /* Adjust the width as needed */
+    box-shadow: none;
+    /* Remove the box shadow on smaller screens */
+    right: auto;
+    /* Reset right position on smaller screens */
   }
 
   /* Hide the menu items by default on smaller screens */
@@ -402,19 +413,20 @@ ul.list-services {
 
 /**** Update Account ****/
 
-.container-account{
+.container-account {
   width: 1000px;
-  margin-left:15%;
-  
+  margin-left: 15%;
+
 }
 
-.account-row{
+.account-row {
   display: flex;
-  gap: 20px;/* To distribute elements evenly along the row */
-  
+  gap: 20px;
+  /* To distribute elements evenly along the row */
+
 }
 
-.profile-row{
+.profile-row {
   display: flex;
   text-align: center;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -422,7 +434,7 @@ ul.list-services {
   border-radius: 50px;
 }
 
-.profile-row h2{
+.profile-row h4 {
   margin-top: 35px;
-  margin-right:20px;
+  margin-right: 30px;
 }

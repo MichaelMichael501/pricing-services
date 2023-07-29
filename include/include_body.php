@@ -19,15 +19,16 @@ HTML;
 $adminNavigation =
   <<<HTML
 
+
 <div class="admin-navigation">
     <img src="../img/AyusinkophlogoPNG.png" alt="logo" class="head-logo">
     <div class="dropdown">
-      <div>
-        <div class='profile-row'>
-        <h2>User</h2>
-        <img src="../img/AyusinkophlogoPNG.png" alt="Profile Picture" width="100" height="100" class="profile-pic" id="profilePic">
+        <div>
+            <div class='profile-row' id="profilePic">
+                <h4>$userName</h4>
+                <img src="$profile" alt="Profile Picture" width="100" height="100" class="profile-pic" id="profilePic">
+            </div>
         </div>
-      </div>
         <div class="dropdown-content" id="myDropdown">
             <a href="../admin/add_services.php">Add Services</a>
             <a href="../admin/update_services.php">Update Services</a>
@@ -37,6 +38,7 @@ $adminNavigation =
         </div>
     </div>
 </div>
+
 HTML;
 
 
