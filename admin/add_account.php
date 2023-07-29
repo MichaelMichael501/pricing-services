@@ -35,6 +35,7 @@ include('../process/config.php');
   <script src="../js/add_type.js"></script>
   <!-- Template Main CSS File -->
   <link rel="stylesheet" type="text/css" href="../css/add_account.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/upload_photo.css">
   <link href="assets/css/registraion_applicant.css" rel="stylesheet">
 
   <!-- =======================================================
@@ -50,15 +51,32 @@ include('../process/config.php');
 
   <!-- ======= Header ======= -->
   <?php echo $adminNavigation; ?>
-<br><br>
+  <br><br>
   <div class="row justify-content-center align-items-center h-100">
     <div class="col-12 col-lg-9 col-xl-7">
       <div class="card shadow-2-strong card-registration" style="border-radius: 15px;">
         <div class="card-body p-4 p-md-5">
           <h3 class="mb-4 pb-2 pb-md-0 mb-md-5">Add User</h3>
-          <form action="assets/process/applicant_signup.php" method="post" enctype="multipart/form-data">
+          <form action="../process/add_account.php" method="post" enctype="multipart/form-data">
 
+            <!--Code for uploading Photo-->
+            <div class="file-upload">
+              <button class="file-upload-btn" type="button" onclick="$('.file-upload-input').trigger( 'click' )">Add Image</button>
 
+              <div class="image-upload-wrap">
+                <input class="file-upload-input" id="profilePic" name="profilePic" type='file' onchange="readURL(this);" accept="image/*" required />
+                <div class="drag-text">
+                  <h3>Drag and drop a photo</h3>
+                </div>
+              </div>
+              <div class="file-upload-content">
+                <img class="file-upload-image" src="#" alt="your image" />
+                <div class="image-title-wrap">
+                  <button type="button" onclick="removeUpload()" class="remove-image">Remove <span class="image-title">Uploaded Image</span></button>
+                </div>
+              </div>
+            </div>
+            <!----------------------------------------------------------------------------------->
 
 
             <div class="row">
@@ -176,6 +194,7 @@ include('../process/config.php');
   <!-- Template Main JS File -->
   <?php echo $adminScript; ?>
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/upload_photo.js"></script>
 
 </body>
 

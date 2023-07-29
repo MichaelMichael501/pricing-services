@@ -6,7 +6,7 @@ $navigation =
     <img src="img/AyusinkophlogoPNG.png" alt="logo" class="head-logo">
     <div class="navigation-link">
       <a href="index.php">Home</a></li>
-      <a href="pricing_electronics.php">Electronics/Appliances</a>
+      <a href="index.php">Electronics/Appliances</a>
       <a href="construction_services.php">Construction Services</a>
       <a href="Electrical_services.php">Electrical Services</a>
       <a href="restaurant_maintenance_services.php">RMS</a>
@@ -22,7 +22,12 @@ $adminNavigation =
 <div class="admin-navigation">
     <img src="../img/AyusinkophlogoPNG.png" alt="logo" class="head-logo">
     <div class="dropdown">
+      <div>
+        <div class='profile-row'>
+        <h2>User</h2>
         <img src="../img/AyusinkophlogoPNG.png" alt="Profile Picture" width="100" height="100" class="profile-pic" id="profilePic">
+        </div>
+      </div>
         <div class="dropdown-content" id="myDropdown">
             <a href="../admin/add_services.php">Add Services</a>
             <a href="../admin/update_services.php">Update Services</a>

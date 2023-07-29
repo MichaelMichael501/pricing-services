@@ -40,7 +40,7 @@ include('../process/config.php');
                     <br>
                 </div>
                 <div class="form-contain">
-                    <input type="text" class="text-field" name="deviceField" id="deviceFieldx">
+                    <input type="text" class="text-field" name="deviceField" id="deviceField">
                     <br>
                     <label for="neededServices" id="labelToUpdate">Select option</label>
                 </div>

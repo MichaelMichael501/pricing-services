@@ -16,6 +16,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if ($checkAccount > 0) {
         if ($getPassword['password'] == $password) {
             $_SESSION['auth'] = session_id();
+            $_SESSION['adminId']=$getPassword['id'];
             header("location:../admin/add_services.php");
         } else {
             echo '<script>

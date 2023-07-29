@@ -11,13 +11,20 @@ body {
 }
 
 .navigation {
-    width: 100%;
-    top: 0;
-    left: 0;
-    margin: 0;
-    /* Remove the margin */
-    background-color: #9cfdbc;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #9cfdbc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+
+}
+
+.navigation-link {
+  float: right;
+  margin-right: 20px;
+  margin-top: 25px;
+
 }
 
 
@@ -316,6 +323,8 @@ ul.list-services {
 }
 
 
+
+
 /*************** Navigation Admin****************************/
 /* Styling for the dropdown menu */
 /* Default styles for the dropdown */
@@ -396,10 +405,24 @@ ul.list-services {
 .container-account{
   width: 1000px;
   margin-left:15%;
+  
 }
 
 .account-row{
   display: flex;
   gap: 20px;/* To distribute elements evenly along the row */
   
+}
+
+.profile-row{
+  display: flex;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 0px 20px 0px 30px;
+  border-radius: 50px;
+}
+
+.profile-row h2{
+  margin-top: 35px;
+  margin-right:20px;
 }
