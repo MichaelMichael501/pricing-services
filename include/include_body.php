@@ -22,11 +22,12 @@ $adminNavigation =
 <div class="admin-navigation">
     <img src="../img/AyusinkophlogoPNG.png" alt="logo" class="head-logo">
     <div class="dropdown">
-        <img src="../img/AyusinkophlogoPNG.png" alt="Profile Picture" width="100" height="100" id="profilePic">
+        <img src="../img/AyusinkophlogoPNG.png" alt="Profile Picture" width="100" height="100" class="profile-pic" id="profilePic">
         <div class="dropdown-content" id="myDropdown">
             <a href="../admin/add_services.php">Add Services</a>
             <a href="../admin/update_services.php">Update Services</a>
             <a href="../admin/service_table_list.php">Services List</a>
+            <a href="../admin/activity_log.php">User's</a>
             <a href="../process/logout.php">Logout</a>
         </div>
     </div>

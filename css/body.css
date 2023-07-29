@@ -330,6 +330,10 @@ ul.list-services {
 }
 
 /* Default styles for the dropdown */
+.profile-pic{
+  border-radius: 50px;
+}
+
 .dropdown {
   position: relative;
   display: inline-block;
@@ -383,4 +387,19 @@ ul.list-services {
   .dropdown:hover .dropdown-content a {
     display: block;
   }
+}
+
+
+
+/**** Update Account ****/
+
+.container-account{
+  width: 1000px;
+  margin-left:15%;
+}
+
+.account-row{
+  display: flex;
+  gap: 20px;/* To distribute elements evenly along the row */
+  
 }

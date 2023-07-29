@@ -1,0 +1,7 @@
+.other-info {
+    display: flex;
+}
+
+.other-info .career {
+    margin-right: 30px;
+}

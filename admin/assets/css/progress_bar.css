@@ -1,0 +1,134 @@
+.main {
+    display: none;
+}
+
+.active {
+    display: block
+}
+
+
+
+.progress_bar {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin-top: -20px;
+    counter-reset: progress 0;
+    text-align: center;
+    color: #b6b6b9;
+    font-weight: 900 !important;
+    font-size: 14px
+}
+
+.progress_bar li {
+    position: relative;
+    counter-increment: progress 1
+}
+
+.progress_bar li::before {
+    position: absolute;
+    content: counter(progress);
+    height: 30px;
+    width: 30px;
+    color: #eee;
+    border: 1px solid #eee;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -40px;
+    left: 10px;
+    z-index: 2;
+    background-color: #fff;
+    transition: all 1s;
+}
+
+.progress_bar li:nth-child(1)::before {
+    background-color: #37517E
+}
+
+.progress_bar li:nth-child(1) {
+    color: #37517E;
+    font-weight: 800 !important
+}
+
+.progress_bar li::after {
+    position: absolute;
+    content: '';
+    width: 230px;
+    height: 4px;
+    background-color: #eeeeee;
+    left: -200px;
+    top: -25px;
+    transition: all 0.5s;
+}
+
+@media (max-width: 420px) {
+    .progress_bar li::after {
+        position: absolute;
+        content: '';
+        width: 90px;
+        height: 4px;
+        background-color: #eeeeee;
+        left: -75px;
+        top: -25px;
+        transition: all 0.5s;
+    }
+}
+
+.progress_bar li:nth-child(1)::after {
+    display: none;
+}
+
+.progress_bar li.active {
+    color: #37517E !important;
+    font-weight: 800 !important;
+}
+
+.progress_bar li.active::before {
+    background-color: #37517E !important;
+    color: #fff !important;
+}
+
+.progress_bar li.active::after {
+    background-color: #37517E !important;
+}
+
+
+.button {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    position: relative
+}
+
+.button button {
+    height: 45px;
+    width: 120px;
+    border: none;
+    background-color: #37517E;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 13px;
+    cursor: pointer;
+    transition: all 0.5s
+}
+
+.button button:hover {
+    background-color: #1966eb;
+}
+
+.list-industry {
+    list-style: none;
+    overflow-y: auto;
+    height: 400px;
+}
+
+.industry {
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.company-size{
+    display: flex;
+}

@@ -1,0 +1,98 @@
+.company-logo{
+    max-width: fit-content;
+  max-height: fit-content;
+  width: 200px;
+
+}
+
+.job-container{
+    background-color: #fff;
+    display: block;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+.header-lower{
+    display: flex;
+
+}
+
+.header-lower h3{
+    margin-top: 40px;
+    margin-left: 20px;
+}
+.header-lower h5{
+    margin-left: 20px;
+}
+
+.title-container{
+    margin-top: 50px;
+    display: flex;
+    gap: 100px;
+}
+
+.title{
+    display: flex;
+}
+
+.title h5{
+    margin-left: 20px;
+}
+
+.title p{
+    
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 100px;
+  margin-left: 10px;
+}
+
+.posted{
+    display: flex;
+}
+
+.posted h5{
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+.posted p{
+    margin-left: 15px;
+    margin-top: 10px;
+    margin-right: 130px;
+}
+
+.posted .apply-now-btn{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 12px 32px;
+    border-radius: 4px;
+    transition: 0.3s;
+    line-height: 1;
+    color: #47b2e4;
+    animation-delay: 0.8s;
+    margin-top: 6px;
+    border: 2px solid #47b2e4;
+}
+
+.posted .apply-now-btn:hover{
+    background: #47b2e4;
+    color: #fff;
+    text-decoration: none;
+}
+
+.description{
+    background-color: #fff;
+    margin-top: 10px;
+    padding: 20px;
+}
+
+
+.additional-info{
+    background-color: #fff;
+    margin-top: 10px;
+    padding: 20px;
+}
