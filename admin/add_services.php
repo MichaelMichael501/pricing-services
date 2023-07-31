@@ -6,7 +6,6 @@ include('../process/config.php');
 include('../include/calling_profile.php');
 include('../include/include_body.php');
 ?>
-<? ?>
 <html lang="en">
 
 <head>

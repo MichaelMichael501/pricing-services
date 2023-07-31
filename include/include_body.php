@@ -15,7 +15,7 @@ $navigation =
   </div>
 
 HTML;
-
+if(isset($profile) && isset($userName)){
 $adminNavigation =
   <<<HTML
 
@@ -41,7 +41,7 @@ $adminNavigation =
 
 HTML;
 
-
+}
 $adminScript=
 <<<HTML
     <script src="../js/add_services.js"></script>
