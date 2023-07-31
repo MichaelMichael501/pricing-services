@@ -38,7 +38,7 @@ $category='Electrical';
         <div id="result" class="device-type"></div>
 
         <div id="services" class="device-services"></div>
-
+        
 
       </div>
       <div class="show-price" id="price" name="price">

@@ -20,6 +20,7 @@ include('../process/config.php');
     
     echo'</select><br>';
     include('select_location.php');
+    include('include/property_type.php');
     echo '<br>';
     echo '<input type="submit" id="showPrice" name="showPrice" value="Check The Price" class="pricing-btn">';
       
