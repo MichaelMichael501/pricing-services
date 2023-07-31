@@ -24,7 +24,6 @@ include('../process/config.php');
     echo '<br>';
     echo '<input type="submit" id="showPrice" name="showPrice" value="Check The Price" class="pricing-btn">';
       
-
   } 
 
   
