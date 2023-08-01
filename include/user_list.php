@@ -24,6 +24,7 @@
             <div class="col col-4">Gender</div>
             <div class="col col-5">Position</div>
             <div class="col col-6">Action</div>
+            <div class="col col-6">Activity Log</div>
         </li>
         <div class="table-over">
             <?php
