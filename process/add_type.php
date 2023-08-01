@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 include('config.php');
 /**Get the Id of pricing using Ajax Request***/
 $selectedDevice = $_POST["deviceId"];
@@ -29,6 +29,7 @@ $file = $_FILES['file'] ?? null;
                 $targetFilePath = $targetDirectory . $fileName;
                 move_uploaded_file($fileTmpName, '../' . $targetFilePath . "-" . $randomId);
                 $unitName = @mysqli_query($con, "INSERT INTO `device_type`(`type`, `device`, `photo_dir`) VALUES ('$deviceType','$selectedDevice','$targetFilePath')");
+                $insertlog=mysqli_query($con,"INSERT INTO `activity_log`(`account_id`, `activity`, `date`) VALUES ('{$_SESSION['adminId']}','Add $deviceType as Type','$currentDate')");
                 echo $deviceType . ' is Added to ' . $valueName['name'];
             } else {
                 echo "Invalid File. image Must be PNG/JPG";

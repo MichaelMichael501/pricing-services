@@ -1,6 +1,6 @@
 <?php
 include('config.php');
-
+session_start();
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (isset($_FILES['profilePic']) && $_FILES['profilePic']['error'] === 0) {
         // Get the uploaded file details
@@ -42,12 +42,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             VALUES ('$adminId','$destinationFile')");
 
             if ($insertAccount && $insertInformation && $insertProfile) {
+                $insertlog=mysqli_query($con,"INSERT INTO `activity_log`(`account_id`, `activity`, `date`) VALUES ('{$_SESSION['adminId']}','Successfuly created the account of $firstName $middleName $lastName','$currentDate')");
                 echo '<script>
                     alert("You\'re all set! The account has been created successfully.");
                     window.location.href="../admin/add_account.php";
                 </script>';
                 exit();
             } else {
+                $insertlog=mysqli_query($con,"INSERT INTO `activity_log`(`account_id`, `activity`, `date`) VALUES ('{$_SESSION['adminId']}','Failed created the account','$currentDate')");
                 echo '<script>
                     alert("Error occurred while creating the account. Please try again.");
                     window.location.href="../admin/add_account.php";

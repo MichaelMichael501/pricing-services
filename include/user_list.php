@@ -24,7 +24,7 @@
             <div class="col col-4">Gender</div>
             <div class="col col-5">Position</div>
             <div class="col col-6">Action</div>
-            <div class="col col-6">Activity Log</div>
+            <div class="col col-8">Activity Log</div>
         </li>
         <div class="table-over">
             <?php
@@ -40,7 +40,7 @@
                 echo "<div class='col col-4' data-label='Gender'>" . $value['gender'] . "</div>";
                 echo "<div class='col col-5' data-label='Position'>" . $value['position'] . "</div>";
                 echo "<div class='col col-6' data-label='Action'><button type='submit' class='remove-btn'>Remove</button></div>";
-                echo "<div class='col col-7' data-label='Action'><a href=''><button type='submit' class='remove-btn'>View</button></a></div>";
+                echo "<div class='col col-8' data-label='Action'><a href='user_activity_log.php?userId=".$value['id']."'><button class='remove-btn'>View</button></a></div>";
                 echo "</li></form>";
             }
             ?>
