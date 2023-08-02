@@ -18,7 +18,7 @@ include('../include/calling_profile.php');
 </head>
 
 <body>
-    <?php echo $adminNavigation; ?>
+<?php echo $adminNavigation; ?>
       <?php include('../include/user_list.php');?>
     
 

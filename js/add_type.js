@@ -2,12 +2,12 @@ $(document).ready(function () {
     //Add type
     $('#addType').click(function () {
         var deviceId = $('#selectDevice').val();
-        var type = $('#typeField').val();
+        var typeName = $('#typeField').val();
         var files = $('#myFileInput').prop('files');
     
         var formData = new FormData();
         formData.append('deviceId', deviceId);
-        formData.append('typeName', type);
+        formData.append('typeName', typeName);
         formData.append('file', files[0]); // Assuming only a single file is selected
     
         $.ajax({

@@ -57,7 +57,7 @@ include('../include/include_body.php');
                     include('../include/device_list.php');
                     ?><br><br>
                     <div class="form-contain">
-                        <input type="text" class="text-field" name="deviceField" id="deviceFieldx">
+                        <input type="text" class="text-field" name="typeField" id="typeField">
                         <br>
                         <label for="neededServices" id="">Type</label>
                     </div>
