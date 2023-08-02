@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php
-include('../include/include_body.php');
+
 include('../include/authentication.php');
 include('../process/config.php');
 include('../include/calling_profile.php');
+include('../include/include_body.php');
 ?>
 
 <head>

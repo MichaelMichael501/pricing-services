@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <?php
-include('../include/include_body.php');
 include('../include/authentication.php');
 include('../process/config.php');
 include('../include/calling_profile.php');
+include('../include/include_body.php');
 ?>
 <html lang="en">
 
@@ -19,17 +19,17 @@ include('../include/calling_profile.php');
 
 <body>
 <?php echo $adminNavigation; ?>
-      <?php include('../include/user_list.php');?>
-    
+  <?php include('../include/user_list.php'); ?>
 
 
-      <script src="../js/search_filter.js"></script>
-    <script src="../js/add_services.js"></script>
-    <script src="../js/account_dropdown.js"></script>
+
+  <script src="../js/search_filter.js"></script>
+  <script src="../js/add_services.js"></script>
+  <script src="../js/account_dropdown.js"></script>
 
 </body>
 
 
 <footer class="all-footer">
-    <img src="../img/AyusinkophlogoPNG.png" alt="logo" class="head-logo">
+  <img src="../img/AyusinkophlogoPNG.png" alt="logo" class="head-logo">
 </footer>
