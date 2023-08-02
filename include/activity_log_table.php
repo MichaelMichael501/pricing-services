@@ -1,5 +1,10 @@
 <div class="container">
-    <h2>AyusinKo Services List</h2>
+<?php
+$userId = $_GET['userId'];
+$accountInfo = @mysqli_query($con, "SELECT * FROM `account_information` WHERE `id`='$userId'");
+$name = mysqli_fetch_array($accountInfo)
+?>
+<h2><?php echo $name['first_name']." ".$name['middle_name']." ".$name['last_name']?></h2>
     <input id="searchInput" class="search-filter" type="text" placeholder="Search by service">
     <select class="select-filter" id="columnSelect">
         <option value="col-1">Id</option>
@@ -13,7 +18,7 @@
         </li>
         <div class="table-over">
         <?php
-        $userId = $_GET['userId'];
+        
         $activityLog = @mysqli_query($con, "SELECT * FROM `activity_log` WHERE `account_id`='$userId'");
         while ($value = mysqli_fetch_array($activityLog)) {
             echo "<li class='table-row'>";
