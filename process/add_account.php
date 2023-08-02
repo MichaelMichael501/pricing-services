@@ -23,6 +23,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         // Move the uploaded file to the destination folder
         if (move_uploaded_file($uploadedFile, "../" . $destinationFile)) {
             $adminId = "admin" . rand(1000, 9999) . date('mdY');
+            $currentDate=date('m - d - Y');
             $username = mysqli_real_escape_string($con, $_POST['username']);
             $password = mysqli_real_escape_string($con, $_POST['password']);
             $firstName = mysqli_real_escape_string($con, $_POST['firstName']);

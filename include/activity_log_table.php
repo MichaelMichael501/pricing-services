@@ -14,11 +14,12 @@
         <div class="table-over">
         <?php
         $userId = $_GET['userId'];
-        $activityLog = @mysqli_query($con, "SELECT * FROM `activity_log` WHERE `appicant_id`='$userId'");
-        while ($value = mysqli_fetch_array($servicesList)) {
+        $activityLog = @mysqli_query($con, "SELECT * FROM `activity_log` WHERE `account_id`='$userId'");
+        while ($value = mysqli_fetch_array($activityLog)) {
+            echo "<li class='table-row'>";
             echo "<div class='col col-1' data-label='Id'>".$value['id']."</div>";
-            echo "<div class='col col-2' data-label='Device/Requisite'>".$reqValue['name']."</div>";
-            echo "<div class='col col-3' data-label='Type'>".$typeValue['type']."</div>";
+            echo "<div class='col col-2' data-label='Device/Requisite'>".$value['activity']."</div>";
+            echo "<div class='col col-3' data-label='Type'>".$value['date']."</div>";
             echo "</li>";
         }
         ?>
