@@ -1,9 +1,11 @@
+<h5>Property Type</h5>
+
 <select name="selectServices" id="selectServices" class="select-tag">
     <option value="">-- Select Property --</option>
     <option value="Single-Family Home">Single-Family Home</option>
     <option value="Condominium (Condo)">Condominium (Condo)</option>
     <option value="Townhouse">Townhouse</option>
-    <option value="Duplex">Duplex</option>
+    <option value="Duplex">Duplex</option>                                   
     <option value="Apartment">Apartment</option>
     <option value="Multi-Family House">Multi-Family House</option>
     <option value="Villa">Villa</option>

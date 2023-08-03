@@ -2,7 +2,7 @@
 <?php
 include('include/include_body.php');
 include('process/config.php');
-$category = 'Electronics/Appliances';
+$category = 'Electrical';
 ?>
 <html lang="en">
 
