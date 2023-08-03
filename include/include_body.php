@@ -8,7 +8,7 @@ $navigation =
       <a href="index.php">Home</a></li>
       <a href="index.php">Electronics/Appliances</a>
       <a href="construction_services.php">Construction Services</a>
-      <a href="Electrical_services.php">Electrical Services</a>
+      <a href="electrical_services.php">Electrical Services</a>
       <a href="restaurant_maintenance_services.php">RMS</a>
     </div>
     
