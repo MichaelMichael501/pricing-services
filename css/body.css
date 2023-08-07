@@ -21,12 +21,7 @@ body {
 
 }
 
-.navigation-link {
-  float: right;
-  margin-top: 30px;
-  margin-left: 300px;
 
-}
 
 
 
@@ -446,4 +441,54 @@ ul.list-services {
 
 .header-title .logo-text{
   margin-top: 20px;
+}
+
+/* Apply this style to the services-dropdown */
+.services-dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 10px 0; /* Add vertical padding to create a gap between items */
+}
+
+/* Show the dropdown menu when the parent link is hovered */
+.services-dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Highlight hover effect for navigation links */
+.navigation-link a {
+  text-decoration: none;
+  color: #333; /* Default text color */
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.navigation-link a:hover {
+  background-color: #f9f9f9; /* Change the background color on hover */
+  color: #555; /* Change the text color on hover */
+}
+
+/* Style for the main navigation links */
+.navigation-link ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navigation-link li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.navigation-link li:last-child {
+  margin-right: 0;
 }
