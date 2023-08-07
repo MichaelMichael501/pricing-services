@@ -2,26 +2,35 @@
 //Naviagation bar
 $navigation =
   <<<HTML
-  <div class="navigation">
-  <div class="header-title">
-    <img src="img/AyusinkophlogoPNG.png" alt="logo" class="head-logo">
-    <h1 class="logo-text me-auto">AyusinKo.ph</h1>
-  </div>
-  <div class="navigation-link">
+<header id="header" class="fixed-top">
+  <img src="img/logo-removebg-preview.png" alt="" class="head-logo">
+  <h1 class="logo me-auto"><a href="index.php">Crempco Services</a></h1>
+
+  <nav id="navbar" class="navbar">
     <ul>
-      <li class="services-dropdown">
-        <a href="#">Maintenance Services</a>
-        <ul class="dropdown-menu">
-          <li><a href="index.php">Electronics/Appliances</a></li>
+      <li class="dropdown">
+        <a href="index.php"><span>Maintenance Services</span> <i class="bi bi-chevron-down"></i></a>
+        <ul>
+          <li><a href="index.php">Electronics/Applicanes</a></li>
+          <li><a href="electrical_services.php">Electrical</a></li>
+          <li><a href="power_tools.php">Power Tools</a></li>
           <li><a href="construction_services.php">Construction Services</a></li>
-          <li><a href="electrical_services.php">Electrical Services</a></li>
-          <li><a href="restaurant_maintenance_services.php">RMS</a></li>
+          <li><a href="restaurant_maintenance_services.php">Restaurant Maintenance Services</a></li>
         </ul>
       </li>
     </ul>
-  </div>
-</div>
-
+    <ul>
+      <li class="dropdown">
+        <a href="#"><span>Cleaning Services</span> <i class="bi bi-chevron-down"></i></a>
+        <ul>
+          <li><a href="janitorial">Janitorial</a></li>
+          <li><a href="home_services.php">Home Services</a></li>
+        </ul>
+      </li>
+    </ul>
+    <i class="bi bi-list mobile-nav-toggle"></i>
+  </nav><!-- .navbar -->
+</header><!-- End Header -->
 
 HTML;
 $adminNavigation =
@@ -50,8 +59,8 @@ $adminNavigation =
 HTML;
 
 
-$adminScript=
-<<<HTML
+$adminScript =
+  <<<HTML
     <script src="../js/add_services.js"></script>
     <script src="../js/account_dropdown.js"></script>
 HTML;

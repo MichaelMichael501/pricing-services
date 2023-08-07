@@ -24,7 +24,7 @@ $category = 'Electrical';
   <?php echo $navigation; ?>
 
   <div class="content">
-    <h1 class="page-title">Transparent Pricing of Electronics and Appliances</h1>
+    <h1 class="page-title">Transparent Pricing of Electrical Services</h1>
     <p class="about-page">
       Our basic services are offered at a fair set price.
       Repair fees may only be quoted after a technician troubleshoots the problem.

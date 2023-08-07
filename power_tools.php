@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<?php 
+<?php
 $userName="";
 $profile="";
 include('include/include_body.php');
 include('process/config.php');
-$category='Electronics/Appliances';
+$category = 'Power Tool';
 ?>
 <html lang="en">
 
@@ -12,7 +12,6 @@ $category='Electronics/Appliances';
   <title>Transparent Pricing</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
   <link rel="stylesheet" type="text/css" href="css/pricing_service.css">
   <link rel="stylesheet" type="text/css" href="css/body.css">
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -21,11 +20,11 @@ $category='Electronics/Appliances';
 </head>
 
 <body>
-  
-<?php echo $navigation;?>
+
+  <?php echo $navigation; ?>
 
   <div class="content">
-    <h1 class="page-title">Transparent Pricing of Electronics/Appliances services</h1>
+    <h1 class="page-title">Transparent Pricing of  Power Tools Maintenance Services</h1>
     <p class="about-page">
       Our basic services are offered at a fair set price.
       Repair fees may only be quoted after a technician troubleshoots the problem.
@@ -41,7 +40,7 @@ $category='Electronics/Appliances';
         <div id="result" class="device-type"></div>
 
         <div id="services" class="device-services"></div>
-        
+
 
       </div>
       <div class="show-price" id="price" name="price">
@@ -49,11 +48,10 @@ $category='Electronics/Appliances';
       </div>
     </div>
   </div>
-  <script src="js/rate_computation.js"></script>
-  <script src="js/mobile_nav.js"></script>
+  
 </body>
 <footer class="all-footer">
-<img src="img/AyusinkophlogoPNG.png" alt="logo" class="head-logo">
+  <img src="img/AyusinkophlogoPNG.png" alt="logo" class="head-logo">
 </footer>
 
 </html>
