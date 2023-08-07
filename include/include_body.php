@@ -3,7 +3,10 @@
 $navigation =
   <<<HTML
   <div class="navigation">
+    <div class="header-title">
     <img src="img/AyusinkophlogoPNG.png" alt="logo" class="head-logo">
+    <h1 class="logo-text me-auto">AyusinKo.ph</h1>
+    </div>
     <div class="navigation-link">
       <a href="index.php">Home</a></li>
       <a href="index.php">Electronics/Appliances</a>
@@ -13,6 +16,7 @@ $navigation =
     </div>
     
   </div>
+
 
 HTML;
 $adminNavigation =

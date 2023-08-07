@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <?php 
+$userName="";
+$profile="";
 include('include/include_body.php');
 include('process/config.php');
 $category='Electronics/Appliances';
