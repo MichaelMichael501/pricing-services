@@ -1,11 +1,6 @@
 <?php
 // Initialize the session
-session_start();
-
-// Destroy all sessions
-session_destroy();
-
-// Redirect the user to the login page or any other appropriate page
-header("Location: index.php"); // Replace "login.php" with the appropriate page URL
-exit();
+include('../process/config.php');
+$firstlog = @mysqli_query($con, "INSERT INTO `activity_log`(`account_id`, `activity`, `date`) VALUES ('sample','Add sample as Type','sample')");
+$insertlog = mysqli_query($con, "INSERT INTO `activity_log`(`account_id`, `activity`, `date`) VALUES ('sample','Add sample as Type','sample')");
 ?>

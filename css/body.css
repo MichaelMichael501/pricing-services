@@ -630,31 +630,26 @@ ul.list-services {
   display: none;
 }
 
+
+
+/* Media query for mobile view */
+
+
+.mobile-menu{
+  display: none;
+}
+/* Media query for mobile view */
 @media (max-width: 768px) {
-  .navbar ul {
-    flex-direction: column;
-    background-color: #f9f9f9;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
+  .mobile-menu{
+    display: block;
+    margin: 0;
+  }
+
+  .maintenance-menu{
     display: none;
   }
 
-  .navbar ul.open {
-    display: flex;
-  }
-
-  .navbar li.dropdown:hover ul {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .navbar .mobile-nav-toggle {
-    display: block;
-  }
-
-  .navbar li.dropdown ul li {
-    padding: 10px 20px;
+  .cleaning-menu{
+    display: none;
   }
 }

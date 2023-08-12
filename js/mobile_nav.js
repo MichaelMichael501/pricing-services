@@ -1,8 +1,8 @@
-document.addEventListener('DOMContentLoaded', function () {
-    const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
-    const navbar = document.querySelector('#navbar');
+document.addEventListener("DOMContentLoaded", function() {
+  var menuBtn = document.getElementById("menuBtn");
+  var mobileNavbar = document.getElementById("mobile-navbar");
 
-    mobileNavToggle.addEventListener('click', function () {
-      navbar.classList.toggle('open');
-    });
+  menuBtn.addEventListener("click", function() {
+    mobileNavbar.classList.toggle("active");
   });
+});

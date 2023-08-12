@@ -8,7 +8,7 @@ $navigation =
 
   <nav id="navbar" class="navbar">
     <ul>
-      <li class="dropdown">
+      <li class="dropdown maintenance-menu">
         <a href="index.php"><span>Maintenance Services</span> <i class="bi bi-chevron-down"></i></a>
         <ul>
           <li><a href="index.php">Electronics/Applicanes</a></li>
@@ -20,7 +20,7 @@ $navigation =
       </li>
     </ul>
     <ul>
-      <li class="dropdown">
+      <li class="dropdown cleaning-menu">
         <a href="#"><span>Cleaning Services</span> <i class="bi bi-chevron-down"></i></a>
         <ul>
           <li><a href="janitorial">Janitorial</a></li>
@@ -28,8 +28,24 @@ $navigation =
         </ul>
       </li>
     </ul>
-    <i class="bi bi-list mobile-nav-toggle"></i>
+    <ul>
+      <li class="dropdown mobile-menu">
+        <a href="#"><span>Menu</span> <i class="bi bi-chevron-down"></i></a>
+        <ul>
+          <li><a href="index.php">Electronics/Applicanes</a></li>
+          <li><a href="electrical_services.php">Electrical</a></li>
+          <li><a href="power_tools.php">Power Tools</a></li>
+          <li><a href="construction_services.php">Construction Services</a></li>
+          <li><a href="restaurant_maintenance_services.php">Restaurant Maintenance Services</a></li>
+        </ul>
+      </li>
+    </ul>
+    
+    
   </nav><!-- .navbar -->
+  </ul>
+</nav>
+
 </header><!-- End Header -->
 
 HTML;

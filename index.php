@@ -12,7 +12,7 @@ $category='Electronics/Appliances';
   <title>Transparent Pricing</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.16.0/font/bootstrap-icons.css">
   <link rel="stylesheet" type="text/css" href="css/pricing_service.css">
   <link rel="stylesheet" type="text/css" href="css/body.css">
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -49,8 +49,10 @@ $category='Electronics/Appliances';
       </div>
     </div>
   </div>
-  <script src="js/rate_computation.js"></script>
+
   <script src="js/mobile_nav.js"></script>
+  <script src="js/rate_computation.js"></script>
+  
 </body>
 <footer class="all-footer">
 <img src="img/AyusinkophlogoPNG.png" alt="logo" class="head-logo">
