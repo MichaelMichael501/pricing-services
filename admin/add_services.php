@@ -83,44 +83,50 @@ include('../include/include_body.php');
             </div>
         </div>
 
-        <div class="add-services">
+        <div class="bottom-part">
+            <div class="add-services">
 
-            <div class="select-price">
-                <h2>Add Services</h2>
-                <?php $devices = @mysqli_query($con, "SELECT * FROM `device_type`");
-                echo '<select name="selectedType" id="selectedType" class="select-tag">';
-                echo "<option value=''>--Select Type--</option>";
+                <div class="select-price">
+                    <h2>Add Services</h2>
+                    <?php $devices = @mysqli_query($con, "SELECT * FROM `device_type`");
+                    echo '<select name="selectedType" id="selectedType" class="select-tag">';
+                    echo "<option value=''>--Select Type--</option>";
 
-                while ($value = mysqli_fetch_array($devices)) {
-                    echo "<option value='" . $value['id'] . "'>" . $value['type'] . "</option>";
-                }
+                    while ($value = mysqli_fetch_array($devices)) {
+                        echo "<option value='" . $value['id'] . "'>" . $value['type'] . "</option>";
+                    }
 
-                echo '</select>';
-                ?>
-                <br><br>
-                <select name="ratePer" id="ratePer" class="select-tag">
-                    <option value="">-- Select Rate per --</option>
-                    <option value="unit">unit</option>
-                    <option value="square feet">ft²</option>
-                </select>
-                <h5>Rate:</h5>
-                <input type="number" id="fee" name="fee" class="add-btn">
-                <br>
+                    echo '</select>';
+                    ?>
+                    <br><br>
+                    <select name="ratePer" id="ratePer" class="select-tag">
+                        <option value="">-- Select Rate per --</option>
+                        <option value="unit">unit</option>
+                        <option value="square feet">ft²</option>
+                    </select>
+                    <h5>Rate:</h5>
+                    <input type="number" id="fee" name="fee" class="add-btn">
+                    <br>
+                </div>
+
+                <div class="choose-services" id="services"></div>
+                <div class='add-servicesbtn'><button role="button" id="addServices" name="addServices" class="add-typebtn">Add</button></div>
+
             </div>
-
-            <div class="choose-services" id="services"></div>
-            <div class='add-servicesbtn'><button role="button" id="addServices" name="addServices" class="add-typebtn">Add</button></div>
-
         </div>
 
+        <div class="add-discount">
+            <h3>current discount:</h3>
+            <input type="number" id="fee" name="fee" class="add-btn">
+
+        </div>
 
     </div>
 
 
 
-<?php 
-echo $adminScript;
-?>
+    <?php
+    echo $adminScript;
+    ?>
 
 </body>
-
